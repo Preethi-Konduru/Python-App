@@ -29,9 +29,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Set up Python
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v2
         with:
-          python-version: '3.x'
+          python-version: '3.x'  # Use a specific version or '3.x' for the latest 3.x version
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
